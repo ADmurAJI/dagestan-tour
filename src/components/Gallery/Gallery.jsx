@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 import './Gallery.scss'
 
 const images = [
-	{ src: "src/assets/gallery1.jpg", alt: "Горный пейзаж" },
-	{ src: "src/assets/gallery2.jpg", alt: "Сулакский каньон" },
-	{ src: "src/assets/gallery3.jpg", alt: "Аул Гамсутль" },
-	{ src: "src/assets/gallery4.jpg", alt: "Каспийское море" },
-	{ src: "src/assets/gallery5.jpg", alt: "Старый город Дербент" },
-	{ src: "src/assets/gallery6.jpg", alt: "Бархан Сарыкум" }
+	{ src: "/gallery1.jpg", alt: "Горный пейзаж" },
+	{ src: "/gallery2.jpg", alt: "Сулакский каньон" },
+	{ src: "/gallery3.jpg", alt: "Аул Гамсутль" },
+	{ src: "/gallery4.jpg", alt: "Каспийское море" },
+	{ src: "/gallery5.jpg", alt: "Старый город Дербент" },
+	{ src: "/gallery6.jpg", alt: "Бархан Сарыкум" }
 ];
 
 const Gallery = () => {
