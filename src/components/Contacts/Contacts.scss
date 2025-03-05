@@ -1,0 +1,90 @@
+.contacts {
+	width: 100%;
+	padding: 80px 20px;
+	background: url("src/assets/contacts-bg.jpg") center/cover no-repeat;
+	position: relative;
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+	}
+	
+	.container {
+		position: relative;
+		max-width: 800px;
+		z-index: 2;
+	}
+	
+	h2 {
+		font-size: 32px;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+	
+	p {
+		font-size: 20px;
+		margin-bottom: 20px;
+		opacity: 0.9;
+	}
+	
+	.social {
+		display: flex;
+		justify-content: center;
+		gap: 25px;
+		margin-top: 15px;
+		
+		a {
+			color: white;
+			font-size: 40px;
+			transition: transform 0.3s ease-in-out, color 0.3s;
+			
+			&:hover {
+				color: #e67e22;
+				transform: scale(1.2);
+			}
+		}
+	}
+	
+	.call-button {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		background: #e67e22;
+		color: white;
+		padding: 12px 20px;
+		font-size: 18px;
+		margin-top: 20px;
+		border-radius: 8px;
+		text-decoration: none;
+		transition: 0.3s;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+		
+		&:hover {
+			background: #d35400;
+			transform: scale(1.05);
+		}
+	}
+	
+	// Анимация появления
+	animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

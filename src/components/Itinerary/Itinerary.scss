@@ -1,0 +1,80 @@
+.itinerary {
+	width: 100%;
+	padding: 80px 20px;
+	background: url("src/assets/itinerary-bg.jpg") center/cover no-repeat;
+	position: relative;
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	
+	.container {
+		position: relative;
+		max-width: 900px;
+		z-index: 2;
+	}
+	
+	h2 {
+		font-size: 36px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	
+	.day {
+		background: rgba(255, 255, 255, 0.9);
+		color: #333;
+		padding: 15px;
+		margin: 10px 0;
+		border-left: 5px solid #e67e22;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		opacity: 0;
+		transform: translateY(20px);
+		animation: fadeInUp 0.8s forwards;
+		
+		&:hover {
+			background: rgba(255, 255, 255, 1);
+			transform: scale(1.02);
+		}
+		
+		h3 {
+			font-size: 22px;
+			margin-bottom: 5px;
+		}
+		
+		.description {
+			font-size: 18px;
+			opacity: 0.8;
+			transition: opacity 0.3s ease-in-out;
+		}
+		
+		&.active {
+			.description {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// Анимация появления блоков
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

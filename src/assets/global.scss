@@ -1,0 +1,55 @@
+// Общие стили
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: #f5f5f5;
+	width: 100vw;
+	min-height: 100vh;
+}
+
+// Контейнер для центрирования контента
+.container {
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 20px;
+}
+
+// Общие стили для секций
+.section {
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 40px 20px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+// Заголовки
+h2 {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+}
+
+button {
+	outline: none;
+	border: none;
+	
+	&:focus {
+		outline: none;
+	}
+	
+	&:focus-visible {
+		outline: none;
+	}
+}
